@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.Views.ClienteDetailPage">
+
+    <StackLayout Padding="10">
+        <Label Text="Nombre:" FontSize="Medium" />
+        <Entry Text="{Binding Nombre}" x:Name="NombreEntry" />
+
+        <Label Text="Apellido:" FontSize="Medium" />
+        <Entry Text="{Binding Apellido}" x:Name="ApellidoEntry" />
+
+        <Label Text="Cédula:" FontSize="Medium" />
+        <Entry Text="{Binding Cedula}" x:Name="CedulaEntry" Keyboard="Numeric" />
+
+        <Label Text="Correo:" FontSize="Medium" />
+        <Entry Text="{Binding Correo}" x:Name="CorreoEntry" />
+
+        <Label Text="Edad:" FontSize="Medium" />
+        <Entry Text="{Binding Edad}" x:Name="EdadEntry" />
+
+        <Label Text="Dirección:" FontSize="Medium" />
+        <Entry Text="{Binding Direccion}" x:Name="DireccionEntry" />
+
+        <Button Text="Guardar" Clicked="OnGuardarClicked" />
+        <Button Text="Eliminar" Clicked="OnEliminarClicked" />
+    </StackLayout>
+</ContentPage>

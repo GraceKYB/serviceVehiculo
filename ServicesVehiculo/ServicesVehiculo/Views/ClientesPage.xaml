@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.Views.ClientesPage">
+
+    <StackLayout Padding="10">
+        <!-- Botón para añadir un nuevo cliente -->
+        <Button Text="Nuevo Cliente" 
+                FontSize="20" 
+                Padding="10" 
+                BackgroundColor="#2196F3" 
+                TextColor="White" 
+                Clicked="OnNuevoClienteClicked" />
+
+        <!-- Título de la Página -->
+        <Label Text="Clientes" FontSize="24" FontAttributes="Bold" Padding="0,10,0,10" />
+
+        <!-- ListView para mostrar los clientes -->
+        <ListView x:Name="ClientesListView" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="10" Margin="0,0,0,10" BackgroundColor="#f9f9f9" HasShadow="True" CornerRadius="5">
+                            <StackLayout>
+                                <Label Text="{Binding Nombre}" FontSize="18" FontAttributes="Bold" TextColor="#333" />
+                                <Label Text="{Binding Apellido}" FontSize="16" TextColor="#555" />
+                                <Label Text="{Binding Cedula}" FontSize="16" TextColor="#777" />
+                                <Label Text="{Binding Correo}" FontSize="16" TextColor="#777" />
+                                <Label Text="{Binding Edad}" FontSize="16" TextColor="#777" />
+                                <Label Text="{Binding Direccion}" FontSize="16" TextColor="#777" />
+                                <Label Text="{Binding Estado}" FontSize="16" TextColor="#777" />
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

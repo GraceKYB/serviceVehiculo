@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.Views.NuevoClientePage">
+
+    <StackLayout Padding="10">
+        <Label Text="Nombre:" FontSize="Medium" />
+        <Entry x:Name="NombreEntry" Placeholder="Ingresa el nombre" />
+
+        <Label Text="Apellido:" FontSize="Medium" />
+        <Entry x:Name="ApellidoEntry" Placeholder="Ingresa el apellido" />
+
+        <Label Text="Cédula:" FontSize="Medium" />
+        <Entry x:Name="CedulaEntry" Placeholder="Ingresa la cédula" />
+
+        <Label Text="Correo:" FontSize="Medium" />
+        <Entry x:Name="CorreoEntry" Placeholder="Ingresa el correo" Keyboard="Email" />
+
+        <Label Text="Edad:" FontSize="Medium" />
+        <Entry x:Name="EdadEntry" Placeholder="Ingresa la edad" Keyboard="Numeric" />
+
+        <Label Text="Dirección:" FontSize="Medium" />
+        <Entry x:Name="DireccionEntry" Placeholder="Ingresa la dirección" />
+
+        <Button Text="Agregar" Clicked="OnAgregarClicked" />
+    </StackLayout>
+</ContentPage>

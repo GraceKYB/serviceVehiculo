@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.Views.SelectVehiPage">
+
+    <StackLayout>
+        <ListView x:Name="VehiculosListView"
+                   SelectionMode="Single"
+                    ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nombre}" Detail="{Binding Modelo}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Next"
+                Clicked="OnNextClicked" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.Views.AutoDetailPage">
+
+    <StackLayout Padding="10">
+        <Label Text="Nombre:" FontSize="Medium" />
+        <Entry Text="{Binding Nombre}" x:Name="NombreEntry" />
+
+        <Label Text="Modelo:" FontSize="Medium" />
+        <Entry Text="{Binding Modelo}" x:Name="ModeloEntry" />
+
+        <Label Text="Marca:" FontSize="Medium" />
+        <Entry Text="{Binding Marca}" x:Name="MarcaEntry" />
+
+        <Label Text="Color:" FontSize="Medium" />
+        <Entry Text="{Binding Color}" x:Name="ColorEntry" />
+
+        <Label Text="Año:" FontSize="Medium" />
+        <Entry Text="{Binding Anio}" x:Name="AnioEntry" />
+
+        <Label Text="Precio:" FontSize="Medium" />
+        <Entry Text="{Binding Precio}" x:Name="PrecioEntry" />
+
+        <Label Text="Stock:" FontSize="Medium" />
+        <Entry Text="{Binding Stock}" x:Name="StockEntry" />
+
+        <Button Text="Guardar" Clicked="OnGuardarClicked" />
+        <Button Text="Eliminar" Clicked="OnEliminarClicked" />
+    </StackLayout>
+</ContentPage>

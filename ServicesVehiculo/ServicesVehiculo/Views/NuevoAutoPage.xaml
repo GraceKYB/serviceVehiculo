@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.Views.NuevoAutoPage">
+
+    <StackLayout Padding="10" Spacing="0.5">
+        <!-- Campos existentes para los datos del vehículo -->
+        <Label Text="Nombre:" FontSize="Medium" />
+        <Entry x:Name="NombreEntry" Placeholder="Ingresa el nombre" />
+
+        <Label Text="Modelo:" FontSize="Medium" />
+        <Entry x:Name="ModeloEntry" Placeholder="Ingresa el modelo" />
+
+        <Label Text="Marca:" FontSize="Medium" />
+        <Entry x:Name="MarcaEntry" Placeholder="Ingresa la marca" />
+
+        <Label Text="Color:" FontSize="Medium" />
+        <Entry x:Name="ColorEntry" Placeholder="Ingresa el color" />
+
+        <Label Text="Año:" FontSize="Medium" />
+        <Entry x:Name="AnioEntry" Placeholder="Ingresa el año" Keyboard="Numeric" />
+
+        <Label Text="Precio:" FontSize="Medium" />
+        <Entry x:Name="PrecioEntry" Placeholder="Ingresa el precio" Keyboard="Numeric" />
+
+        <Label Text="Stock:" FontSize="Medium" />
+        <Entry x:Name="StockEntry" Placeholder="Ingresa el stock" Keyboard="Numeric" />
+
+        <!-- Nueva sección para subir una imagen -->
+        <Button Text="Seleccionar Imagen" Clicked="OnSeleccionarImagenClicked" />
+        <Image x:Name="ImagenVehiculo" HeightRequest="150" Aspect="AspectFit" />
+
+        <!-- Botón para agregar el auto -->
+        <Button Text="Agregar" Clicked="OnAgregarClicked" Margin="0,20,0,0" />
+    </StackLayout>
+</ContentPage>

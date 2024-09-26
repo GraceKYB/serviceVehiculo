@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.Views.CantPlacaPage">
+
+    <StackLayout Padding="10" Spacing="10">
+        <!-- Botón para mostrar el formulario -->
+        <Button Text="Colocar Cantidad y Placas" 
+                Clicked="OnShowFormClicked"
+                Margin="10" />
+
+        <!-- StackLayout para el formulario de cantidad y placas -->
+        <StackLayout x:Name="FormularioStackLayout" IsVisible="False" Padding="10" Spacing="10">
+            <Label Text="Ingrese la cantidad del vehículo:" FontSize="Medium" />
+            <Entry x:Name="CantidadEntry" Placeholder="Cantidad" Keyboard="Numeric" />
+
+            <Button Text="Mostrar Campos de Placas" Clicked="OnShowPlacasFieldsClicked" Margin="10" />
+
+            <StackLayout x:Name="PlacasStackLayout" Spacing="10">
+                <!-- Campos de placas se agregarán dinámicamente aquí -->
+            </StackLayout>
+
+            <Button Text="Guardar" Clicked="OnSaveClicked" Margin="10" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServicesVehiculo.MainPage">
+
+    <StackLayout Padding="10">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenido A Vehiculos MVC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Button Text="Clientes" Clicked="OnClientesClicked" />
+        <Button Text="Vehículos" Clicked="OnVehiculosClicked" />
+        <Button Text="Asignar Vehículos" Clicked="OnAsignarVehiculosClicked" />
+        <Button Text="Ver Contratos" Clicked="OnVerContratoClicked" />
+        <Button Text="Busqueda por Cédula" Clicked="OnBusquedaCedClicked" />
+        <Button Text="Busqueda por Placa" Clicked="OnBusquedaPlacaClicked" />
+        <!-- Puedes agregar más contenido aquí -->
+    </StackLayout>
+
+</ContentPage>
